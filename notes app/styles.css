@@ -1,0 +1,99 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    width: 400px;
+    background: #fdfeff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.heading img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Add Note Button */
+.add-note {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add-note:hover {
+    background-color: #0056b3;
+}
+
+/* Note Writing Area */
+.write-note {
+    position: relative;
+    margin-top: 20px;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 50px; /* Prevents collapse */
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    text-align: left; /* Ensures text starts from left */
+    display: flex;
+    align-items: flex-start; /* Ensures text starts at the top */
+    justify-content: space-between;
+    position: relative;
+    cursor: text;
+}
+
+/* Delete Icon */
+.deletee-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
+
+.deletee-icon:hover {
+    opacity: 1;
+}
+
